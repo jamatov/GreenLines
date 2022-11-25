@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function HomeMain() {
   return (
-    <section className='HomeMain'>
+    <section className='HomeMain' data-aos="fade-up">
       <div className="container">
         <div className="main">
           <div className="main__top-info">

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function MainNumbers() {
   return (
-    <div className='MainNumbers'>
+    <div className='MainNumbers' data-aos="fade-up">
       <div className="container">
         <div className="main-numbers">
           <div>
@@ -12,7 +12,7 @@ export default function MainNumbers() {
             <Link>Посмотреть Карту</Link>
           </div>
 
-          <div>
+          <div >
             <p className="number">10</p>
             <p className='text'>Топ Отоларингология <br /> Врачи</p>
             <Link>ПОСМОТРЕТЬ БИОС ВРАЧА</Link>

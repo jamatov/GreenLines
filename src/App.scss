@@ -1,27 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+$green : #00C21F;
+$yellow : #dae63f;
+$blue : #597DFD;
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  text-decoration: none !important;
+  list-style-type: none;
 }
 
+
+
 .container{
-  width: 1100px;
+  width: 1200px;
   margin: 0 auto;
 }
 
-@media (max-width : 1100px) {
+@media (max-width : 1200px) {
   .container{
     width: 80%;
   }
 }
 
+// body{
+//   background: #000;
+// }
+
 
 .nav-bar{
-  
+  width: 1200px;
+  z-index: 99;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background: #fff;
   img{
-    height: 70px;
+    height: 100px;
+  }
+
+  .nav-bar__info{
+    text-align: right;
+
+    .nav-bar__info-texts{
+      margin-bottom: 20px;
+      p{
+        color: #00C21F;
+        font-size: 21px;
+      }
+      span{
+        color: #597DFD;
+        display: block;
+      }
+    }
+
+    .nav-list{
+      border-top: 2px solid $yellow;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+
+      .nav-item{
+        margin-top: 5px;
+        a{
+          background: transparent;
+          color: #000000;
+          font-size: 14px;
+          padding: 10px 0;
+          transition: 0.3s;
+
+
+          &:hover{
+            transition: 0.3s;
+            color: $green;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+
+.carusel{
+
+  .carousel-indicators{
+    button{
+      display: none;
+    }
+  }
+  .carusel-item{
+
+    img{
+      object-fit: cover;
+      width: 3000px;
+      height: 783px;
+      margin: 0 auto;
+    }
+  }
+
+  .carusel-info{
+    text-align: left;
+    padding-left: 50px;
+    margin-bottom: 100px;
+
+    .carusel-info__tittle{
+      color: #dae63f;
+      font-size: 45px;
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 10px;
+      max-width: 310px;
+      position: relative;
+      text-transform: lowercase;
+    }
+
+    .carusel-info__texts{
+      border-top: 2px solid #dae63f;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      max-width: 310px;
+      padding-top: 10px;
+      position: relative;
+      
+    }
+
+    a{
+      color: $yellow;
+      font-size: 19px;
+      font-weight: 700;
+      transition: 0.3s;
+
+      &:hover{
+        transition: 0.3s;
+        color: #fff;
+      }
+    }
   }
 }

@@ -7,6 +7,7 @@ import Audiology from './pages/Audiology';
 import Providers from './pages/Providers'
 import Specialties from './pages/Specialties'
 import Locations from './pages/Locations'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
 
 
       </Routes>
+
+      {/* <Footer/> */}
     </div>
   );
 }

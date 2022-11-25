@@ -14,7 +14,7 @@ export default function HomeSlide() {
           src={Woman}
           alt="First slide"
         />
-        <Carousel.Caption className='carusel-info container'>
+        <Carousel.Caption className='carusel-info container' data-aos="zoom-in">
           <p className='carusel-info__tittle'>about</p>
           <p className='carusel-info__texts'>AOC provides multiple levels of comprehensive primary ENT care including the diagnosis and management of all diseases of the ears, nose, throat, and sinuses. In addition, AOC provides the full spectrum of subspecialty ENT care including the management of pediatric airway, cancer, skull base surgery, neuro-otology, advanced head and neck surgical and reconstructive procedures, and craniofacial surgery. </p>
           <Link>Learn More</Link>
@@ -27,7 +27,7 @@ export default function HomeSlide() {
           alt="Second slide"
         />
 
-        <Carousel.Caption className='carusel-info container'>
+        <Carousel.Caption className='carusel-info container' data-aos="zoom-in">
           <p className='carusel-info__tittle'>about</p>
           <p className='carusel-info__texts'>AOC provides multiple levels of comprehensive primary ENT care including the diagnosis and management of all diseases of the ears, nose, throat, and sinuses. In addition, AOC provides the full spectrum of subspecialty ENT care including the management of pediatric airway, cancer, skull base surgery, neuro-otology, advanced head and neck surgical and reconstructive procedures, and craniofacial surgery. </p>
           <Link>Learn More</Link>

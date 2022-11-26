@@ -77,12 +77,13 @@ html {
   }
 }
 
-// body{
-//   background: #000;
-// }
+
+
+
 
 
 .nav-bar{
+  transition: 0.5s;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   border-radius:0 0px 10px 10px;
   width: 1200px;
@@ -91,10 +92,11 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 50px;
+  padding:50px 50px 30px 50px;
   background: #fff;
   img{
-    height: 100px;
+    transition: 0.5s;
+    height: 130px;
   }
 
   .nav-bar__info{
@@ -157,6 +159,22 @@ html {
       }
     }
   }
+}
+
+.navbarActive{
+  transition: 0.5s;
+  padding:10px 50px 0px 50px;
+
+  img{
+    transition: 0.5s;
+
+    transform: scale(0.7);
+  }
+
+  p{
+    margin-bottom: 0;
+  }
+  
 }
 
 
@@ -329,6 +347,7 @@ html {
     }
   }
 }
+
 
 
 

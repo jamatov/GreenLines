@@ -1,12 +1,25 @@
 import React from 'react'
 import Logo from '../icons/logo.svg'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import Line from '../images/line.htm'
 
 export default function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
+
+  const changeNavbar = () => {
+      if (window.scrollY >= 30) {
+          setNavbar(true);
+      } else {
+          setNavbar(false)
+      }
+  }
+  window.addEventListener('scroll', changeNavbar);
+
   return (
     <div className='container'>
-      <nav className='nav-bar'>
+      <nav className={`nav-bar ${navbar ? 'navbarActive' : ''}`}>
         <Link to='/'><img src={Logo} alt="" /></Link>
         <div className='nav-bar__info'>
           <div className='nav-bar__info-texts'>

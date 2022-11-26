@@ -8,10 +8,19 @@ import Providers from './pages/Providers'
 import Specialties from './pages/Specialties'
 import Locations from './pages/Locations'
 import Footer from './components/Footer';
+import Scroltop from './icons/scrolltop.svg'
+
+import { useState, useLocation, useEffect } from 'react';
 
 function App() {
+
+
+
+
+
   return (
     <div className="App">
+      
       <Navbar/>
 
       <Routes>

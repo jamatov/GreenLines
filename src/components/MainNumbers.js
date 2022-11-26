@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function MainNumbers() {
   return (
-    <div className='MainNumbers' data-aos="fade-up">
+    <div className='MainNumbers' data-aos="zoom-in">
       <div className="container">
         <div className="main-numbers">
           <div>
@@ -23,6 +23,8 @@ export default function MainNumbers() {
             <p className='text'>Останавливаться <br /> ЛОР-провайдер</p>
             <Link>УЗНАЙТЕ О НАШИХ ПРОЦЕДУРАХ</Link>
           </div>
+
+          
         </div>
       </div>
     </div>

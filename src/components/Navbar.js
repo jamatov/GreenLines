@@ -19,7 +19,6 @@ export default function Navbar() {
             <li className="nav-item"><Link to='/providers'>PROVIDERS</Link></li>
             <li className="nav-item"><Link to='/specialties'>SPECIALTIES</Link></li>
             <li className="nav-item"><Link to='/locations'>LOCATIONS</Link></li>
-            {/* <li className="nav-item"><Link>PAY MY BILL</Link></li> */}
           </ul>
         </div>
       </nav>

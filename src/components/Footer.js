@@ -50,6 +50,20 @@ export default function Footer() {
               <Link>Thyroid/Parathyroid</Link></li>
           </ul>
         </div>
+
+        <div className="blog3">
+          <h2>Locations</h2>
+          <ul>
+            <li><Link>North Phoenix Office</Link></li>
+            <li><Link>Glendale Office</Link></li>
+            <li><Link>Mesa Office</Link></li>
+          </ul>
+        </div>
+
+        <div className="blog4">
+          <h2>Referral Coordinator?</h2>
+          <p>Please reach out to us directly at 602.264.4834</p>
+        </div>
       </div>
     </footer>
   )

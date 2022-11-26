@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       
       <Navbar/>
-      {/* <ScrollToTop/> */}
+      <ScrollToTop/>
 
       <Routes>
         <Route path='/' element={<Home/>}></Route>

@@ -340,6 +340,7 @@ html {
   .footer{
     padding: 0 50px;
     display: flex;
+    justify-content: space-between;
 
     .blog1{
       margin-right: 100px;
@@ -400,6 +401,56 @@ html {
             }
           }
         }
+      }
+    }
+
+    .blog3{
+
+
+      h2{
+        border-bottom: 0 none;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.25;
+        margin: 0 0 5px;
+        padding: 0;
+      }
+
+      ul{
+        padding: 0;
+
+        li{
+          
+          a{
+            transition: 0.3s;
+            font-size: 12px;
+            color: #fff;
+
+            &:hover{
+              transition: 0.3s;
+              color: $yellow;
+            }
+          }
+        }
+      }
+
+    }
+
+    .blog4{
+      float: right;
+      h2{
+        border-bottom: 0 none;
+        color: #fff;
+        font-size: 28px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+      }
+
+      p{
+        font-size: 12px;
+        color: #fff;
       }
     }
   }

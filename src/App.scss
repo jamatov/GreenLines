@@ -17,8 +17,8 @@ $green2 : #50C878;
 html {
 
   ::selection {
-      background-color: $green2;
-      color: $yellow;
+      background-color: $yellow;
+      color: #fff;
   }
 
   img {
@@ -37,7 +37,7 @@ html {
   }
 
   ::-webkit-scrollbar-thumb {
-      background: $green2;
+      background: $yellow;
       border-radius: 5px;
   }
 }
@@ -613,4 +613,13 @@ html {
 .Audiology{
   transition: 0.5s;
   padding-bottom: 100px;
+}
+
+.LocationsMain{
+  padding: 100px 0;
+  .map{
+    width: 100%;
+    height: 760px;
+    border-radius: 5px;
+  }
 }

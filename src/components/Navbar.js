@@ -2,7 +2,6 @@ import React from 'react'
 import Logo from '../icons/logo.svg'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import Line from '../images/line.htm'
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);

@@ -11,7 +11,7 @@ export default function AudiologyMain() {
 
         <div className="about-main__info">
           <div data-aos="fade-right" className="blog">
-            <h2>Hospital Affiliations</h2>
+            <h2>Audiology Team <br /> Subspecialties</h2>
             <p>AOC Physicians are integral members of the hospital and medical staff community in the Phoenix area with active medical staff membership/ privileges at numerous Valley hospitals including:</p>
           
             <ul>
@@ -30,7 +30,7 @@ export default function AudiologyMain() {
           </div>
 
           <div data-aos="fade-left" className="blog">
-            <h2>Education</h2>
+            <h2>Our <br /> Audiologists</h2>
             <p>AOC’s physicians are actively involved in several physician training and residency programs, including:</p>
           
             <ul>

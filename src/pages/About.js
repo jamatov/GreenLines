@@ -1,11 +1,14 @@
 import React from 'react'
 import AboutHead from '../components/AboutHead'
+import AboutMain from '../components/AboutMain'
+import AboutTitle from '../components/AboutTitle'
 
 export default function About() {
   return (
     <div className='About'>
       <AboutHead/>
-      <h2>Оказание услуг по качественному медицинскому туризму граждан СНГ с ведущими специалистами г. Ташкента.</h2>
+      <AboutTitle/>
+      <AboutMain/>
       
     </div>
   )

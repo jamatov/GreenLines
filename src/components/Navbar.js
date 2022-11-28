@@ -8,7 +8,7 @@ export default function Navbar() {
 
 
   const changeNavbar = () => {
-      if (window.scrollY >= 30) {
+      if (window.scrollY >= 120) {
           setNavbar(true);
       } else {
           setNavbar(false)

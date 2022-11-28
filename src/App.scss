@@ -85,7 +85,6 @@ html {
 .nav-bar{
   transition: 0.5s;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  border-radius:0 0px 10px 10px;
   width: 1200px;
   z-index: 99;
   position: fixed;
@@ -478,11 +477,19 @@ html {
 
 
 .AboutHead{
-  padding-top: 210px;
-  background-color: $blue;
+  transition: 0.5s;
+  height: 210px;
+  background-color: $green2;
 
   h2{
     color: #fff;
     margin-bottom: 0;
   }
+}
+
+.AboutHeadActive{
+  position: fixed;
+  width: 100%;
+  height: 140px;
+  transition: 0.5s;
 }

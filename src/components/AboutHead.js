@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import HomeMain from './HomeMain';
-import HomeSlide from './HomeSlide';
+
 
 export default function AboutHead() {
   const [navbar, setNavbar] = useState(false);

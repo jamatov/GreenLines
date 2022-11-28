@@ -1,9 +1,9 @@
 import React from 'react'
-import Banner from '../images/about-banner.jpg'
 import { Link } from 'react-router-dom'
+import Banner from '../images/audiology-banner.jpg'
 
 
-export default function AboutMain() {
+export default function AudiologyMain() {
   return (
     <div className='AboutMain'>
       <div className="container padding">
@@ -25,10 +25,7 @@ export default function AboutMain() {
               <li><span>HonorHealth Scottsdale Shea</span></li>
               <li><span>Maricopa Integrated Health Systems</span></li>
               <li><span>Mayo Clinic</span></li>
-              <li><span>North Valley Surgery Center</span></li>
-              <li><span>Phoenix Children’s Hospital</span></li>
-              <li><span>Surgery Center of Gilbert</span></li>
-              <li><span>Surgery Center of Peoria</span></li>
+
             </ul>
           </div>
 
@@ -41,17 +38,9 @@ export default function AboutMain() {
               <li><span>University of Arizona College of Medicine</span></li>
               <li><span>Mayo Clinic</span></li>
               <li><span>Midwestern University</span></li>
-              <li><span>Creighton University School of Medicine</span></li>
-              <li><span>A.T. Still University</span></li>
             </ul>
 
-            <div className='location-info'>
-              <h3>3</h3>
-              <div>
-                <p>Valley <br /> Locations</p>
-                <Link>view map</Link>
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>

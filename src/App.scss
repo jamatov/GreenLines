@@ -10,6 +10,10 @@ $green2 : #50C878;
   overflow-x: hidden;
 }
 
+.App{
+  transform: 0.5s;
+}
+
 html {
 
   ::selection {
@@ -602,4 +606,9 @@ html {
       }
     }
   }
+}
+
+.Audiology{
+  transition: 0.5s;
+  padding-bottom: 100px;
 }

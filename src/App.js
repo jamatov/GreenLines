@@ -14,15 +14,9 @@ import { useState, useLocation, useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
-
- 
-
-
-
   return (
     <div className="App">
-      
-      <Navbar/>
+      {/* <Navbar/> */}
       <ScrollToTop/>
 
       <Routes>

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 
 
 export default function AboutMain() {
+
+  
   return (
     <div className='AboutMain'>
       <div className="container padding">

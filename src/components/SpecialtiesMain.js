@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SpecialtiesMain() {
   return (
-    <div className='AboutMain'>
+    <div className='AboutMain Specialties'>
       <div className="container padding pt-5">
 
         <div className="about-main__info">
@@ -15,7 +15,7 @@ export default function SpecialtiesMain() {
             <p>Regardless of the condition, the compassionate, expert team at Arizona Otolaryngology Consultants is available to help.</p>
           </div>
 
-          <div data-aos="fade-left" className="blog">
+          <div data-aos="fade-left" className="blog mb-5">
             <h2>Learn More</h2>
           
             <ul>

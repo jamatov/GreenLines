@@ -1,10 +1,23 @@
 import React from 'react'
+import { useState } from 'react';
 
-export default function AudiologyTittle() {
+export default function AboutTitle() {
+
+  const [navbar, setNavbar] = useState(false);
+  const changeNavbar = () => {
+      if (window.scrollY >= 120) {
+          setNavbar(true);
+      } else {
+          setNavbar(false)
+      }
+  }
+  window.addEventListener('scroll', changeNavbar);
+
+
   return (
-    <div className='AboutTitle'>
+    <div className={`AboutTitle ${navbar ? 'AboutActive' : ''}`}>
       <div className="container padding">
-        <h2>The audiologists at AOC Physicians offer a full range of services related to hearing and balance disorders. With five convenient locations, audiologists work with our physicians to provide patients with total hearing healthcare. Each audiologist has obtained national certification and state licensed credentials in clinical and dispensing audiology.</h2>
+        <h2>Оказание услуг по качественному медицинскому туризму граждан СНГ с ведущими специалистами г. Ташкента.</h2>
       </div>
     </div>
   )

@@ -712,9 +712,8 @@ html {
     margin-bottom: 0;
   }
 
-
-
 }
+
 
 .AboutMain{
   img{
@@ -796,12 +795,32 @@ html {
   }
 }
 
+
+
+.AboutActive{
+  
+  transition: 0.5s;
+}
+
 @media (max-width : 1000px) {
   .AboutMain{
     .about-main__info{  
       grid-template-columns: auto;
     }
 
+  }
+}
+
+@media (max-width: 1200px) {
+  .location-info{
+    h3{
+      font-size: 150px !important;
+    }
+    div{
+      p{
+        font-size: 43px !important;
+      }
+    }
   }
 }
 

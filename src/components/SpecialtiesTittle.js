@@ -1,10 +1,23 @@
 import React from 'react'
+import { useState } from 'react';
 
-export default function SpecialtiesTittle() {
+export default function AboutTitle() {
+
+  const [navbar, setNavbar] = useState(false);
+  const changeNavbar = () => {
+      if (window.scrollY >= 120) {
+          setNavbar(true);
+      } else {
+          setNavbar(false)
+      }
+  }
+  window.addEventListener('scroll', changeNavbar);
+
+
   return (
-    <div className='AboutTitle'>
+    <div className={`AboutTitle ${navbar ? 'AboutActive' : ''}`}>
       <div className="container padding">
-        <h2>The team at AOC Physicians specializes in several medical subspecialties, including laryngology, neurotology, pediatric otolaryngology, and much more. Hailing from some of the best medical institutions in the country, our physicians are dedicated to treating all kinds of ear, nose, and throat-related conditions.</h2>
+        <h2>Оказание услуг по качественному медицинскому туризму граждан СНГ с ведущими специалистами г. Ташкента.</h2>
       </div>
     </div>
   )

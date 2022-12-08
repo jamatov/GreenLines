@@ -182,18 +182,21 @@ html {
 .nav-bar{
   transition: 0.5s;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   z-index: 99;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:50px 50px 30px 50px;
+  padding:50px 10px 30px 10px;
   background: #fff;
   img{
     transition: 0.5s;
-    height: 130px;
+    height: 110px;
   }
+
+
 
  
 
@@ -266,11 +269,11 @@ html {
 
 .navbarActive{
   transition: 0.5s;
-  padding:10px 50px 0px 50px;
+  padding:10px 10px 0px 10px;
 
   img{
     transition: 0.5s;
-    transform: scale(0.7);
+    transform: scale(0.9);
   }
 
   p{
@@ -279,21 +282,21 @@ html {
   
 }
 
-@media (max-width : 990px) {
-  .nav-bar{
-    img{
-      margin-right: 100% !important;
-    }
-    // .nav-bar__info-texts{
-    //   display: none;
-    // }
-    .nav-bar__info{
-      text-align: left;
-    }
+// @media (max-width : 990px) {
+//   .nav-bar{
+//     img{
+//       margin-right: 100% !important;
+//     }
+//     // .nav-bar__info-texts{
+//     //   display: none;
+//     // }
+//     .nav-bar__info{
+//       text-align: left;
+//     }
 
   
-  }
-}
+//   }
+// }
 
 
 
@@ -702,6 +705,7 @@ html {
 }
 
 .AboutTitle{
+  padding-top: 210px;
   background-color: $green2;
 
   h2{

@@ -17,8 +17,8 @@ export default function Navbar() {
   window.addEventListener('scroll', changeNavbar);
 
   return (
-    <div className='container'>
       <nav className={`nav-bar ${navbar ? 'navbarActive' : ''}`}>
+       <div className="container navvbar d-flex justify-content-between">
         <Link to='/'><img src={Logo} alt="" /></Link>
         <div className='nav-bar__info'>
           <div className='nav-bar__info-texts'>
@@ -33,7 +33,7 @@ export default function Navbar() {
             <li className="nav-item"><Link to='/locations'>LOCATIONS</Link></li>
           </ul>
         </div>
+       </div>
       </nav>
-    </div>
   )
 }

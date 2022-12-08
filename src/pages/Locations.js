@@ -6,7 +6,7 @@ import LocationsTittle from '../components/LocationsTittle'
 export default function Locations() {
   return (
     <div className='Locations'>
-      <AboutHead/>
+      {/* <AboutHead/> */}
       <LocationsTittle/>
       <LocationsMain/>
     </div>

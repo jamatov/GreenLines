@@ -6,7 +6,7 @@ import AboutTitle from '../components/AboutTitle'
 export default function About() {
   return (
     <div className='About'>
-      <AboutHead/>
+      {/* <AboutHead/> */}
       <AboutTitle/>
       <AboutMain/>
       

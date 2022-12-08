@@ -6,7 +6,7 @@ import SpecialtiesTittle from '../components/SpecialtiesTittle'
 export default function Specialties() {
   return (
     <div className='Specialties'>
-      <AboutHead/>
+      {/* <AboutHead/> */}
       <SpecialtiesTittle/>
       <SpecialtiesMain/>
     </div>

@@ -6,7 +6,7 @@ import AudiologyTittle from '../components/AudiologyTittle'
 export default function Audiology() {
   return (
     <div className='Audiology'>
-      <AboutHead/>
+      {/* <AboutHead/> */}
       <AudiologyTittle/>
       <AudiologyMain/>
     </div>

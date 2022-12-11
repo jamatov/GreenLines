@@ -14,10 +14,28 @@ import { useState, useLocation, useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
+
+  const [navbar, setNavbar] = useState(false);
+  function setNav() {
+    if (window.scrollY >= 850) {
+        setNavbar(true);
+    } else {
+        setNavbar(false)
+    }
+  };
+
+  window.addEventListener("scroll", setNav)
+
+  const top = () => {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div className="App">
       <Navbar/>
       <ScrollToTop/>
+
+      <img  className={navbar ? 'scrol-top fixed' : 'scrol-top'} onClick={top} src={Scroltop} alt="" />
 
       <Routes>
         <Route path='/' element={<Home/>}></Route>

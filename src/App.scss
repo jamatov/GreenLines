@@ -718,6 +718,21 @@ html {
 
 }
 
+.scrol-top{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  opacity: 0;
+  z-index: 9;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.fixed{
+  opacity: 1;
+  transition: 1s;
+}
+
 
 .AboutMain{
   img{
@@ -834,10 +849,9 @@ html {
 }
 
 .LocationsMain{
-  padding: 100px 0;
   .map{
     width: 100%;
-    height: 760px;
+    height: 50vh;
     border-radius: 5px;
   }
 }

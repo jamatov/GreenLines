@@ -28,7 +28,7 @@ export default function Navbar() {
           <ul className="nav-list">
             <li className="nav-item"><Link to='/about'>ABOUT US</Link></li>
             <li className="nav-item"><Link to='/audiology'>AUDIOLOGY</Link></li>
-            <li className="nav-item"><Link to='/providers'>PROVIDERS</Link></li>
+            {/* <li className="nav-item"><Link to='/providers'>PROVIDERS</Link></li> */}
             <li className="nav-item"><Link to='/specialties'>SPECIALTIES</Link></li>
             <li className="nav-item"><Link to='/locations'>LOCATIONS</Link></li>
           </ul>

@@ -10,7 +10,7 @@ import Locations from './pages/Locations'
 import Footer from './components/Footer';
 import Scroltop from './icons/scrolltop.svg'
 
-import { useState, useLocation, useEffect } from 'react';
+import { useState } from 'react';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {

@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
-
+  const [mobile, setMobile] = useState(true)
 
   const changeNavbar = () => {
       if (window.scrollY >= 120) {
@@ -20,7 +20,7 @@ export default function Navbar() {
       <nav className={`nav-bar ${navbar ? 'navbarActive' : ''}`}>
        <div className="container navvbar d-flex justify-content-between">
         <Link to='/'><img src={Logo} alt="" /></Link>
-        <div className='nav-bar__info'>
+        <div className= {mobile? 'nav-links-mobile' : 'nav-bar__info'} onClick={() => setMobile(false)}>
           <div className='nav-bar__info-texts'>
             <p>Questions or Comments? Please contact us at <span>602.264.4834</span></p>
           </div>
@@ -32,7 +32,13 @@ export default function Navbar() {
             <li className="nav-item"><Link to='/specialties'>SPECIALTIES</Link></li>
             <li className="nav-item"><Link to='/locations'>LOCATIONS</Link></li>
           </ul>
+
+          
         </div>
+
+        <button className='mobile-menu-icon' onClick={() => setMobile(!mobile)}>
+          x
+        </button>
        </div>
       </nav>
   )

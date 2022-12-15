@@ -180,6 +180,7 @@ html {
 
 
 .nav-bar{
+  position: relative;
   transition: 0.5s;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   width: 100%;
@@ -224,6 +225,38 @@ html {
 
       
     }
+  }
+
+  .mobile-menu-icon{
+    display: none;
+    border: none;
+    background: none;
+    font-size: 20px;
+  }
+
+
+}
+
+@media (max-width : 768px) {
+
+  .nav-bar__info{
+    display: none;
+  }
+
+  .nav-links-mobile{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 10%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .mobile-menu-icon{
+    display: block !important;
+    position: absolute;
+    right: 20px;
   }
 }
 

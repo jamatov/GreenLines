@@ -5,7 +5,20 @@ import { useState } from 'react'
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
-  // const [mobile, setMobile] = useState(true)
+  const [active, setActive] = useState('nav-bar__info')
+  const [toggleIcon, setToggleIcon] = useState('nav_togler')
+
+
+  const navToggle = () => {
+    active === 'nav-bar__info'
+      ? setActive('nav-bar__info nav_active')
+      : setActive('nav-bar__info');
+
+    toggleIcon === 'nav_togler'
+      ? setToggleIcon('nav-togler toggle')
+      : setToggleIcon('nav_togler');
+  }
+
 
   const changeNavbar = () => {
       if (window.scrollY >= 120) {
@@ -18,28 +31,29 @@ export default function Navbar() {
 
   return (
       <nav className={`nav-bar ${navbar ? 'navbarActive' : ''}`}>
-       <div className="container navvbar d-flex justify-content-between">
-        <Link to='/'><img src={Logo} alt="" /></Link>
-        <div className='nav-bar__info'>
-          <div className='nav-bar__info-texts'>
-            <p>Questions or Comments? Please contact us at <span>602.264.4834</span></p>
+        <div className="container navvbar d-flex justify-content-between align-items-center">
+          <Link to='/'><img src={Logo} alt="" /></Link>
+          <div className={active}>
+            <div className='nav-bar__info-texts'>
+              <p>Questions or Comments? Please contact us at <span>602.264.4834</span></p>
+            </div>
+
+            <ul className="nav-list">
+              <li className="nav-item"><Link to='/about'>ABOUT US</Link></li>
+              <li className="nav-item"><Link to='/audiology'>AUDIOLOGY</Link></li>
+              {/* <li className="nav-item"><Link to='/providers'>PROVIDERS</Link></li> */}
+              <li className="nav-item"><Link to='/specialties'>SPECIALTIES</Link></li>
+              <li className="nav-item"><Link to='/locations'>LOCATIONS</Link></li>
+            </ul>
           </div>
 
-          <ul className="nav-list">
-            <li className="nav-item"><Link to='/about'>ABOUT US</Link></li>
-            <li className="nav-item"><Link to='/audiology'>AUDIOLOGY</Link></li>
-            {/* <li className="nav-item"><Link to='/providers'>PROVIDERS</Link></li> */}
-            <li className="nav-item"><Link to='/specialties'>SPECIALTIES</Link></li>
-            <li className="nav-item"><Link to='/locations'>LOCATIONS</Link></li>
-          </ul>
+          <div onClick={navToggle} className="nav_togler">
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </div>
 
-          
         </div>
-
-        {/* <button className='mobile-menu-icon' onClick={() => setMobile(!mobile)}>
-          x
-        </button> */}
-       </div>
       </nav>
   )
 }

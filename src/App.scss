@@ -185,7 +185,7 @@ html {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   width: 100%;
   margin: 0 auto;
-  z-index: 99;
+  z-index: 999;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -193,10 +193,12 @@ html {
   padding:20px 10px 20px 10px;
   background: #fff;
   img{
+    z-index: 999 !important;
     transition: 0.5s;
     height: 110px;
   }
 
+  
 
 
  
@@ -226,39 +228,74 @@ html {
       
     }
   }
+}
 
-  .mobile-menu-icon{
-    display: none;
-    border: none;
-    background: none;
-    font-size: 20px;
+.nav_togler{
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+  div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: $green;
+  }
+}
+
+.toggle{
+  .line2{
+    width: 0;
   }
 
+  .line1{
+    transform: translateY(9px);
+    transition-delay: .4s;
+  }
 
+  .line3{
+    transition-delay: .4s;
+    transform: translateY(-9px) rotate(90deg);
+    
+  }
 }
 
 @media (max-width : 768px) {
 
-  .nav-bar__info{
-    display: none;
+  .nav-bar{
+    img{
+      width: 170px !important;
+    }
   }
-
-  .nav-links-mobile{
-    position: absolute;
+  .nav_togler{
     display: block;
-    left: 0;
-    top: 10%;
-    transition: all 0.5s ease-in-out;
-    width: 100%;
-    background-color: #fff;
   }
 
-  .mobile-menu-icon{
-    display: block !important;
-    position: absolute;
-    right: 20px;
+  .nav-bar__info{
+    position: fixed;
+    padding-top: 120px;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 53%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px 0px;
+    display: block;
+    text-align: center !important;
+    transform: translateY(-120%);
+    transition: 0.5s;
+
+    ul{
+      display: block !important;
+    }
   }
 }
+
+.nav_active{
+  transform: translateY(0);
+  
+}
+
+
 
 
 
@@ -314,25 +351,6 @@ html {
   }
   
 }
-
-// @media (max-width : 990px) {
-//   .nav-bar{
-//     img{
-//       margin-right: 100% !important;
-//     }
-//     // .nav-bar__info-texts{
-//     //   display: none;
-//     // }
-//     .nav-bar__info{
-//       text-align: left;
-//     }
-
-  
-//   }
-// }
-
-
-
 
 .carusel{
 

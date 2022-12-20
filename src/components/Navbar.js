@@ -34,16 +34,18 @@ export default function Navbar() {
         <div className="container navvbar d-flex justify-content-between align-items-center">
           <Link to='/'><img src={Logo} alt="" /></Link>
           <div className={active}>
+            <Link onClick={navToggle} className='logo2' to='/'><img src={Logo} alt="" /></Link>
+
             <div className='nav-bar__info-texts'>
               <p>Questions or Comments? Please contact us at <span>602.264.4834</span></p>
             </div>
 
             <ul className="nav-list">
-              <li className="nav-item"><Link to='/about'>ABOUT US</Link></li>
-              <li className="nav-item"><Link to='/audiology'>AUDIOLOGY</Link></li>
+              <li onClick={navToggle} className="nav-item"><Link to='/about'>ABOUT US</Link></li>
+              <li onClick={navToggle} className="nav-item"><Link to='/audiology'>AUDIOLOGY</Link></li>
               {/* <li className="nav-item"><Link to='/providers'>PROVIDERS</Link></li> */}
-              <li className="nav-item"><Link to='/specialties'>SPECIALTIES</Link></li>
-              <li className="nav-item"><Link to='/locations'>LOCATIONS</Link></li>
+              <li onClick={navToggle} className="nav-item"><Link to='/specialties'>SPECIALTIES</Link></li>
+              <li onClick={navToggle} className="nav-item"><Link to='/locations'>LOCATIONS</Link></li>
             </ul>
           </div>
 
